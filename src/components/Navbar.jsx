@@ -1,12 +1,19 @@
+import { Link } from 'react-router-dom';
+
+
+
 export default function Navbar() {
   return (
-    <nav className="bg-yellow-400 text-black px-6 py-4 flex justify-between items-center">
+      <nav className="pt-16 bg-yellow-400 min-h-screen p-6">
       <h1 className="font-bold text-xl">Fiap Commerce</h1>
       <div className="flex gap-4">
-        <a href="#" className="hover:underline">Home</a>
-        <a href="#" className="hover:underline">Perfil</a>
-        <a href="#" className="hover:underline">Carrinho</a>
+        <Link to="/" className="hover:bg-gray-700 p-2 rounded">Home</Link>
+        <Link to="Perfil" className="hover:bg-gray-700 p-2 rounded">Perfil</Link>
+        <Link to="Carrinho" className="hover:bg-gray-700 p-2 rounded">Carrinho</Link>
       </div>
     </nav>
   );
 }
+
+
+
